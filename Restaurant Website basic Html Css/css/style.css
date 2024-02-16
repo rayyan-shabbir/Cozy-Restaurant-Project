@@ -1,0 +1,786 @@
+/* Css Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar Section */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 92%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.97;
+}
+
+#navbar img{
+    height: 90px;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: left;
+}
+
+#navbar ul li{
+    list-style: none;
+    text-align: left;
+
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 28.5px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+}
+
+#navbar ul li a:hover, #navbar ul li #active{
+    color: orangered;
+}
+
+#navbar ul li #menue-ancor{
+    padding-right: 0px;
+}
+
+#navbar .btn{
+    padding: 9px;
+    margin: 23px;
+    margin-left: 888px;
+    text-align: left;
+    border: 2px solid orangered;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 21px;
+    background-color: orangered;
+    color: white;
+    font-family: 'Merriweather', serif;
+    width: 138px;
+    padding-left: 28px;
+}
+
+#navbar .btn:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid red;
+}
+
+#menue{
+    margin: 0px;
+    width: 26px;
+    border: 0px solid white;
+    background-color: #656565;
+    cursor: pointer;
+}
+
+#menue #sub1{
+    padding: 50px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/bg2.jpeg') no-repeat center center/cover;
+    height: 800px;
+    margin: -10px;
+    opacity: 0.89;
+    width: 1905px;
+    /* padding: 100px; */
+}
+
+#home::before{
+    /* content: "";
+    background: url('../img/bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 1500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8; */
+}
+
+#home .primary{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding-left: 891px;
+    padding-bottom: -50px;
+}
+
+#home h1{
+    color: #ff0000;
+    font-size: 8.1rem;
+    text-align: left;
+    font-family: 'Bree Serif', serif;
+    padding-left: 891px;
+    margin-top: -20px;
+}
+
+
+#home .button{
+    display: flex;
+    flex-direction: column;
+    margin-left: -296px;
+}
+
+.button .btn{
+    padding: 14px;
+    margin: 23px;
+    margin-left: 922px;
+    text-align: left;
+    border: 2px solid rgb(255, 68, 0);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 19px;
+    background-color: rgb(255, 68, 0);
+    color: white;
+    font-family: 'Merriweather', serif;
+    width: 224px;
+}
+
+#home .btn:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid red;
+}
+
+.button #explore{
+    padding: 14px 30px;
+    margin-top: 40px;
+}
+
+#home .secondary{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding: 0px 100px;
+    padding-left: 969px;
+}
+
+.secondary u{
+    color: orangered;
+    cursor: pointer;
+}
+
+/* Food Section */
+#food-section{
+    padding-top: 5px;
+    background-color: #484541;
+    background-color: #2e2d2b;
+    /* background-color: #e4c793; */
+    margin-top: 10px;
+}
+
+#food-section h1 {
+    padding: 29px;
+    margin-left: -1227px;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3.3rem;
+}
+
+#food-section h1 span{
+    font-size: 4.9rem;
+    color: #ff0000;
+}
+
+#food{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#food .item{
+    /* border: 2px solid brown; */
+    width: 467px;
+    margin-bottom: 19px;
+}
+
+
+.item p{
+    font-size: 1.3rem;
+    color: white;
+    padding-left: 10px;
+    padding-top: 7px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.item p:hover{
+    text-decoration: underline;
+}
+
+.item span{
+    font-size: 1.5rem;
+    color: red;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+#food .item img{
+    height: 320px;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+#food .item img:hover{
+    opacity: 0.3;
+    border: 0px;
+    /* width: 470px; */
+    cursor: pointer;
+}
+
+/* Desert Section */
+
+#desert-section::before{
+    content: "";
+    /* background-color: #484541; */
+    background-color: #2e2d2b;
+    position: absolute;
+    height: 66.7%;
+    width: 100%;
+    z-index: -1;
+}
+
+#desert-section span{
+    font-family: 'Merriweather', serif;
+    display: block;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#desert-section h1{
+    font-size: 3.3rem;
+    font-family: 'Bree Serif', serif;
+    color: whitesmoke;
+}
+
+#desert-section #desert{
+    display: flex;
+    margin: 50px 200px;
+    margin-left: 130px;
+}
+
+#desert .item{
+    display: flex;
+    border: 0.5px solid black;
+    padding: 30px 34px;
+    margin: 10px 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#desert .item:hover{
+    background-color: rgb(91, 91, 91);
+    border: 0px;
+    cursor: pointer;
+}
+
+
+#desert .item #cherry{
+    height: 200px;
+    padding: 0px 10px;
+    margin: -4px -50px;
+}
+#desert .item #rose{
+    height: 150px;
+    padding-top: 30px;
+    margin-left: -29px;
+}
+#desert .item #donut{
+    height: 100px;
+    padding-top: 70px;
+    padding-right: 52px;
+}
+#desert .item #choco{
+    height: 200px;
+    padding-right: 55px;
+}
+
+.item .par{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.item .par p{
+    font-family: 'Merriweather', serif;
+    padding-top: 40px;
+}
+
+.item .par .price{
+    padding-top: 20px;
+    font-size: 2.1rem;
+    color: #ff0000;
+}
+
+/* #desert .item img{
+    height: 150px;
+} */
+
+
+/* Reservation Section */
+#reservation-section{
+    background-color: rgb(255, 243, 230);
+    display: flex;
+}
+
+#reservation-section img{
+    padding: 130px 0px;
+    height: 430px;
+}
+
+#reservation-section #res{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 50px 100px;
+    padding-right: 70px;
+}
+
+#reservation-section #res p{
+    font-size: 2.5rem;
+    color: red;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#reservation-section #res h1{
+    font-size: 3.5rem;
+    font-family: 'Bree Serif', serif;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+#reservation-section #res .btn{
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    width: 190px;
+    margin-left: 400px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Merriweather', serif;
+    border: 1px solid black;
+    transition-property: all;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#reservation-section #res .btn:hover{
+    background-color: red;
+    border: 1px solid red;
+}
+
+#reservation-section #res #reservation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px solid brown; */
+    width: 1000px;
+    padding-left: 29px;
+}
+
+#reservation-section #res #reservation .item{
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+
+#reservation-section #res #reservation .item label{
+    display: block;
+}
+
+#reservation-section #res #reservation .item input{
+    width: 400px;
+    margin: 10px 10px;
+    padding: 12px 11px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.1rem;
+}
+ 
+#reservation-section #res #reservation .item select{
+    width: 430px;
+    margin: 10px 7px;
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.1rem;
+}
+
+/* Branch Section */
+#branches-section{
+    background-color: #2b2926;
+    height: 750px;
+}
+
+#branches-section h1{
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-family: 'Merriweather', serif;
+}
+
+#branches-section #branches{
+    display: flex;
+    padding: 0px 50px;
+}
+
+#branches-section #branches .item{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+
+#branches-section #branches .item img{
+    height: 260px;
+}
+
+#branches-section #branches .item i{
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 5px 0px;
+    color: #f2b008;
+}
+
+#branches-section #branches .item span{
+    color: red;
+    font-size: 1.0rem;
+}
+
+#branches-section #branches .item h2{
+    color: white;
+    padding: 10px 10px;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Customer Section */
+#customer-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #c4a679;
+    height: 640px;
+}
+
+#customer-section h1{
+    margin: 50px;
+    font-size: 4.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#customer-section #customer{
+    display: flex;
+    flex-direction: row;
+    margin: -30px 70px;
+}
+
+#customer-section #customer .item{
+    /* border: 2px solid red; */
+    width: 400px;
+    padding: 0px 80px;
+    margin: 0px 10px;
+}
+
+#customer-section #customer .item p{
+    font-size: 1.9rem;
+}
+
+#customer-section #customer .item p:hover{
+    text-decoration: none;
+}
+
+#customer-section #customer .item h2{
+    font-size: 2.4rem;
+    color: #ff0000;
+    display: inline-block;
+}
+
+#customer-section #customer .item i{
+    font-size: 2.8rem;
+    padding-left: 20px;
+}
+
+
+/* Mobile Section */
+#mobile-section{
+    /* border: 2px solid red; */
+    background-color: #f0e5d7;
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+}
+
+#mobile-section h1{
+    margin-top: 30px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3.9rem;
+}
+
+#mobile-section #mobile{
+    /* border: 2px solid green; */
+    display: flex;
+}
+
+#mobile-section #mobile img{
+    /* width: 0px; */
+    padding: 20px 190px;
+}
+
+#mobile-section #mobile #steps{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-left: -280px;
+    padding-top: 20px;
+}
+
+#mobile-section #mobile #steps .item{
+    /* border: 2px solid red; */
+    margin-top: 50px;
+}
+
+#mobile-section #mobile #steps p{
+    color: black;
+    font-size: 1.7rem;
+    cursor: default;
+    font-family: 'Merriweather', serif;
+}
+
+#mobile-section #mobile #steps p:hover{
+    text-decoration: none;
+}
+
+#mobile-section #mobile #steps .item i{
+    display: inline;
+    color: black;
+    font-size: 2.1rem;
+    margin-right: 15px;
+}
+
+/* Contact Section*/
+#contact-section{
+    background-color: #0e0616;
+    height: 400px;
+}
+
+#contact-section #contact{
+    display: flex;
+    padding: 0px 80px;
+}
+
+#contact .item{
+    /* border: 2px solid red; */
+    font-size: 2.5rem;
+    margin: 10px 10px;
+    width: 500px;
+    margin-left: 90px;
+}
+
+#contact .item #adress{
+    margin-top: 80px;
+    margin-bottom: -30px;
+    margin-left: 70px;
+    height: 60px;
+}
+
+#contact .item #time{
+    margin-top: 30px;
+    margin-bottom: -70px;
+    margin-left: 50px;
+    height: 150px;
+}
+
+#contact .item #phone{
+    margin-top: 60px;
+    margin-bottom: -50px;
+    margin-left: 20px;
+    height: 100px;
+}
+
+#contact .item #email{
+    margin-top: 60px;
+    margin-bottom: -50px;
+    margin-left: 10px;
+    height: 100px;
+}
+
+#contact .item span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2.0rem;
+    color: white;
+}
+
+#contact .item p{
+    font-size: 1.5rem;
+    color: wheat;
+}
+
+/* End Section */
+#end-section{
+   /* background: url('../img/end.jfif') no-repeat center center/cover; */
+   background-color: rgb(24, 22, 22);
+}
+
+#end-section #end{
+    display: flex;
+    flex-direction: row;
+    padding-top: 140px;
+}
+
+#end-section #end .item{
+    width: 900px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 30px 100px;
+}
+
+#end-section #end .item h2{
+    font-size: 1.7rem;
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+#end-section #end .item p{
+    margin-top: -20px;
+    text-align: justify;
+}
+
+#end-section #end .item input{
+    width: 370px;
+    padding: 10px 18px;
+    margin-top: -20px;
+    margin-left: 3px;
+    font-size: 1.5rem;
+}
+
+
+#end-section #end .item .icon{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1.7rem;
+    margin-top: -15px;
+    margin-left: -23px;
+}
+
+#end-section #end .item .icon i{
+    padding: 0px 30px;
+}
+
+#end-section #end .item .icon a i{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#end-section #end .item .icon a i:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+#end-section p{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#end-section #end .item p:hover,
+#end-section p:hover{
+    text-decoration: none;
+    cursor: default;
+}
+
+#end-section .item #login:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Table Section */
+
+/* #table-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    height: 400px;
+}
+
+#table-section::before{
+    content: "";
+    background: url('../img/table.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#table-section p{
+    font-size: 1.4rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: black;
+}
+
+#table-section h1{
+    font-size: 3.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#table-section .btn{
+    padding: 18px;
+    margin: 23px;
+    border: 2px solid orangered;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: orangered;
+    color: white;
+    font-family: 'Merriweather', serif;
+    width: 208px;
+}
+
+#table-section .btn:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid red;
+} */
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
